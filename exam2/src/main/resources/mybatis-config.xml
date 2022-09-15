@@ -8,7 +8,7 @@
 		<setting name="jdbcTypeForNull" value="VARCHAR" />
 	</settings>
 	<typeAliases>
-		<package name="com.yedam.java.todo.service" />
+		<package name="com.yedam.java.chat.service" />
 	</typeAliases>
 	<typeHandlers>
 		<typeHandler javaType="java.sql.Date"

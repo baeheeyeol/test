@@ -1,4 +1,4 @@
-package com.yedam.java.chat;
+package com.yedam.java.chat.service;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -11,12 +11,9 @@ import lombok.extern.log4j.Log4j;
 @Log4j
 public class ChatController {
 	
-
 	@GetMapping("/chat")
 	public void chat(Model model) {
-		CustomUser user =new CustomUser();
-		
-		SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+		CustomUserVO user =(CustomUserVO)SecurityContextHolder.getContext().getAuthentication().getPrincipal();
 
 		log.info("==================================");
 		log.info("@ChatController, GET Chat / Username : " + user.getUsername());

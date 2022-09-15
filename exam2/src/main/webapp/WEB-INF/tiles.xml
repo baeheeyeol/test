@@ -12,7 +12,9 @@
 	<definition name="home" extends="mainTemplate">
 		<put-attribute name="content" value="/WEB-INF/views/home.jsp" />
 	</definition>
-	
+	<definition name="chat" extends="mainTemplate">
+		<put-attribute name="content" value="/WEB-INF/views/chat/chat.jsp" />
+	</definition>
 	
 	<definition name="*/*" extends="mainTemplate">
 		<put-attribute name="content" value="/WEB-INF/views/{1}/{2}.jsp" />
